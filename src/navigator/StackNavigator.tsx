@@ -1,6 +1,7 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import { HomeScreen } from "../screens/HomeScreen";
 import { FormularioScreen } from "../screens/FormularioScreen";
+import { BACKGROUND_COLOR, SECONDARY_COLOR } from "../common/appColors";
 
 export type RootStackParams = {
   Home: undefined;
@@ -14,7 +15,7 @@ export const StackNavigator = () => {
     <Stack.Navigator
       screenOptions={{
         cardStyle: {
-          backgroundColor: "#242C3B",
+          backgroundColor: BACKGROUND_COLOR,
         },
       }}
     >
@@ -28,13 +29,13 @@ export const StackNavigator = () => {
         component={FormularioScreen}
         options={{
           headerStyle: {
-            backgroundColor: "#242C3B",
+            backgroundColor: BACKGROUND_COLOR,
             elevation: 0,
           },
           headerTitleStyle: {
-            color: "white",
+            color: SECONDARY_COLOR,
           },
-          headerTintColor: "white",
+          headerTintColor: SECONDARY_COLOR,
         }}
       />
     </Stack.Navigator>

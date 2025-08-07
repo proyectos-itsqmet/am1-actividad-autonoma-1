@@ -1,4 +1,9 @@
 import { StyleSheet } from "react-native";
+import {
+  INPUT_COLOR,
+  PRIMARY_COLOR,
+  SECONDARY_COLOR,
+} from "../common/appColors";
 
 const styles = StyleSheet.create({
   container: {
@@ -10,24 +15,27 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "white",
-  },
-  homeImage: {
-    width: 300,
-    height: 300,
-    resizeMode: "contain",
-    marginVertical: 50,
+    color: SECONDARY_COLOR,
   },
   button: {
-    backgroundColor: "#F26C20",
+    backgroundColor: PRIMARY_COLOR,
     paddingHorizontal: 48,
     paddingVertical: 12,
     borderRadius: 12,
   },
   textButton: {
-    color: "white",
+    color: SECONDARY_COLOR,
     fontWeight: "bold",
     fontSize: 12,
+  },
+  textInput: {
+    backgroundColor: INPUT_COLOR,
+    color: SECONDARY_COLOR,
+    width: "100%",
+    height: 50,
+    borderRadius: 12,
+    paddingHorizontal: 16,
+    fontSize: 14,
   },
 });
 
