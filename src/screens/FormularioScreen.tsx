@@ -24,8 +24,13 @@ export const FormularioScreen = () => {
     const parseDividendo = parseFloat(dividendo);
     const parseDivisor = parseFloat(divisor);
 
-    if (dividendo === "" && divisor === "") {
-      setMessage("Llena los campos!");
+    if (dividendo === "") {
+      setMessage("Te falta el dividendo!");
+      return;
+    }
+
+    if (divisor === "") {
+      setMessage("Te falta el divisor!");
       return;
     }
 
